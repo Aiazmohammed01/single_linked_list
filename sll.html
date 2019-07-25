@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+      <link rel="stylesheet" href="sll.css">
+  </head>
+  <body>
+    <script src="sll.js">
+  </script>
+<div class="dropdown">
+  <button class=" dropbtn">operations</button>
+  <div class="dropdown-content">
+
+  <p><input id="1" type="text" placeholder="number">
+    <input type="button"  onclick="ll.add(Number(document.getElementById('1').value));ll.size();ll.display()" value="add">
+    <input type="button"  id="bu" onclick="ll.remove(Number(document.getElementById('1').value));ll.size();ll.display()" value="remove"></p>
+
+      <p><input id="2" type="text" name="appendat" placeholder="index">
+        <input id="2.1" type="text" name="index" placeholder="value">
+        <input type="button" onclick="ll.addAt(Number(document.getElementById('2').value),Number(document.getElementById('2.1').value));ll.size();ll.display()" value="append at"></p>
+        <p><input type="text" id="2.2" placeholder="index">
+    <input type="button"  onclick="ll.removeAt(Number(document.getElementById('2.2').value));ll.size();ll.display()" value="remove at">
+    <input type="text" id="2.3" placeholder="removed value"></p>
+
+
+    <p><input id="3" type="text" name="element" placeholder="index">
+      <input type="button"  onclick="ll.elementAt(Number(document.getElementById('3').value));ll.size();ll.display()" value="element at">
+      <input type="text" id="3.1" placeholder="element at given index"></p>
+
+
+      <p><input id="4" type="text" name="indexOf" placeholder="value">
+        <input type="button"  onclick="ll.indexOf(Number(document.getElementById('4').value));ll.display()" value="index of">
+        <input type="text" id="4.1" placeholder="value at"></p>
+
+
+    <p><input type="button"  value="size">
+    <input id="5" type="text" name="size_is" value=""></p>
+
+    <p><input type="button"  onclick="ll.head()" value="head">
+      <input type="text" id="6" placeholder="headvalue"></p>
+      <button type="button"  onclick="ll.isEmpty();ll.display()" name="button">isEmpty?</button>
+      <input type="text" id="isEmpty" value=" ">
+    <p>  <a href="sll.html"><button type="button"  name="button">create new</button></a></p>
+
+</div>
+</div>
+<div align='center'>
+  <div class="nav-table">  <div id="row" class="nav-row"></div></div>
+
+</div>
+  </body>
+</html>
